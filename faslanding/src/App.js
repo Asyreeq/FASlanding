@@ -22,8 +22,7 @@ const useStyles = makeStyles(theme => ({
   root: {
     height: '100vh',
   },
-  image: {
-    //backgroundImage: 'url(https://source.unsplash.com/random)',
+  image: {    
     backgroundImage: `url(${Image})`,
     backgroundRepeat: 'center',
     backgroundColor:
@@ -31,27 +30,6 @@ const useStyles = makeStyles(theme => ({
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     marginTop: theme.spacing(8),
-  },
-  paper: {
-    margin: theme.spacing(8, 4),
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-  },
-  avatar: {
-    margin: theme.spacing(1),
-    backgroundColor: theme.palette.secondary.main,
-  },
-  form: {
-    width: '100%', // Fix IE 11 issue.
-    marginTop: theme.spacing(1),
-  },
-  submit: {
-    margin: theme.spacing(3, 0, 2),
-  },
-
-  menuButton: {
-    marginRight: theme.spacing(2),
   },
   title: {
     flexGrow: 1,
@@ -80,7 +58,7 @@ export default function LandingPage() {
       <div>
         <AppBar position="fixed">
           <Toolbar>
-            <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
+            <IconButton edge="start" color="inherit" aria-label="menu">
               <MenuIcon />
             </IconButton>
             <Typography variant="h6" className={classes.title} >
